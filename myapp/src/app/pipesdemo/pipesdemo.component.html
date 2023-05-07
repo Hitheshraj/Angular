@@ -1,0 +1,15 @@
+<div class="container m-5">
+    <div class="row">
+        <div class="col">
+            <input type="text" [(ngModel)]="filterStatus"/>
+            <ul class="list-group m2">
+                <li class="list-group-item" *ngFor="let server of servers | filter:filterStatus:'status'"
+                 [ngClass]="getStatusClass(server)">
+                    <strong>{{server.name | shorten:0:10}} </strong>
+                    | {{server.started | date}} | {{server.serverSize | uppercase |reverse}}
+                    <span class="badge bg-warning">{{server.status}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

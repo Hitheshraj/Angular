@@ -1,0 +1,48 @@
+{
+  "employes": [
+    {
+      "id": 1,
+      "first_name": "John",
+      "last_name": "smith",
+      "email": "jsmit@example.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Ray",
+      "last_name": "Snyder",
+      "email": "rs@edu.com"
+    },
+    {
+      "id": 3,
+      "first_name": "Mike",
+      "last_name": "Jayson",
+      "email": "MJ@example.com"
+    },
+    {
+      "id": 4,
+      "first_name": "leslie",
+      "last_name": "Adrew",
+      "email": "lesadre@example.com"
+    },
+    {
+      "id": 5,
+      "first_name": "Robin",
+      "last_name": "Smith",
+      "email": "Rs@example.com"
+    },
+    {
+      "first_name": "Brand",
+      "last_name": "new",
+      "email": "Br@example.com",
+      "id": 6
+    }
+  ],
+  "posts": [
+    {
+      "title": "json db",
+      "content": "First json db",
+      "id": 1
+    }
+  ],
+  "cources": []
+}

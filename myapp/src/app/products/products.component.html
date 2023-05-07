@@ -1,0 +1,7 @@
+<app-addproduct (productAdded)="onAddProduct($event)"></app-addproduct>
+<div class="row">
+    <div class="col-xs-12">
+        <app-product *ngFor="let product of products"
+         [product]="product">{{product}}</app-product>
+    </div>
+</div>

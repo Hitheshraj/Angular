@@ -1,0 +1,42 @@
+<div class="conatiner m-5 w-25">
+    <form [formGroup]="singnupForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="form-group">
+                <div class="col">
+                    <label for="username">UserName</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="username"  name="username"
+                        placeholder="User Name" formControlName="username"/>
+                    <span class="small" *ngIf="!singnupForm.get('username').valid && singnupForm.get('username').touched">Please enter valid user name</span>
+                    <!-- <span class="small" *ngIf="!singnupForm.get('username').errors['nameIsForbiden'] && singnupForm.get('username').touched">This User name is taken</span> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <div class="col">
+                    <label for="Email">Email</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="email" placeholder="Email"  name="email" formControlName="email"/>
+                    <span class="small" *ngIf="!singnupForm.get('email').valid && singnupForm.get('email').touched">Please enter valid email</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <div class="col">
+                    <label for="gender">Gender</label>
+                    <div class="radio" *ngFor="let gender of genders">
+                        <label>
+                            <input type="radio" name="gender" [value]="gender" formControlName="gender" />
+                            {{gender}}
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary m-2" >Submit</button>
+    </form>
+</div>
