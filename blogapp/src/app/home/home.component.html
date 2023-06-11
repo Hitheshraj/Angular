@@ -1,0 +1,3 @@
+
+<app-home-view  *ngFor="let blog of  Posts"
+[blogInp]="blog" (postDeleted)="onPostDelete()" ></app-home-view>

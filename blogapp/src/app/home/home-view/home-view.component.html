@@ -1,0 +1,13 @@
+<div class="alert alert-warning" role="alert" *ngIf="available">
+  No post to display!{{available}}
+</div>
+<div class="card w-50 mt-5 mb-5" style="width: 25rem;">
+    <img src="{{blogInp.image}}" class="card-img-top" alt="...">
+    <div class="card-body" >
+      <h5 class="card-title">Author :{{blogInp.author}}</h5>
+      <h5 class="card-title">Title :{{blogInp.title}}</h5>
+      <p class="card-text">{{blogInp.content}}</p>
+      <a href="#" class="btn btn-danger" (click)="onDeletePost()">Delete</a>
+    </div>
+  </div>
+  

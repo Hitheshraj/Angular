@@ -1,0 +1,15 @@
+h3{
+align-items: center;
+   margin-left: 45%;
+   
+}
+.container-fluid{
+    background-color: #CBD6E2;
+
+}
+.nav-link{
+    color: black;
+}
+.nav-link:hover{
+    background-color: aliceblue;
+}
